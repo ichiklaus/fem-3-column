@@ -1,0 +1,238 @@
+/** Imports **/
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+/** Resets **/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+/** Variables **/
+:root {
+  --b-orange: hsl(31, 77%, 52%);
+  --d-cyan: hsl(184, 100%, 22%);
+  --vd-cyan: hsl(179, 100%, 13%);
+}
+/*
+*,
+html,
+body {
+    width: 100%;
+    height: 100%;
+}*/
+
+/** Base styles **/
+a:hover {
+  text-decoration: underline;
+  color: var(--b-orange);
+}
+
+.attribution {
+  background-color: var(--b-orange);
+}
+
+body,
+.card_button,
+.attribution {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+.card__car {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  padding: 3rem 3rem;
+}
+
+.car__logo {
+  padding: 1rem 0 2rem 0.25rem;
+}
+
+.card__title {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0rem 0 2rem 0;
+}
+
+.card__text {
+  padding: 0rem 1.1rem 3rem 0rem;
+}
+
+.card__button {
+  margin-left: 0.5rem;
+}
+
+.card__button.white-bg:hover {
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.card__button.white-bg.card__button.white-bg.orange-font:hover {
+  background-color: var(--b-orange);
+  color: white;
+}
+
+.card__button.white-bg.card__button.white-bg.dcyan-font:hover {
+  background-color: var(--d-cyan);
+  color: white;
+}
+
+.card__button.white-bg.card__button.white-bg.vdcyan-font:hover {
+  background-color: var(--vd-cyan);
+  color: white;
+}
+
+.card__car.sedan--orange {
+  background-color: var(--b-orange);
+}
+.card__car.suv--dcyan {
+  background-color: var(--d-cyan);
+}
+.card__car.luxury--vdcyan {
+  background-color: var(--vd-cyan);
+}
+
+.card__button {
+  padding: 0.75rem 2rem;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border: 1px solid white;
+  font-weight: 700;
+}
+
+.card__button.white-bg {
+  background-color: white;
+}
+
+.card__button.white-bg.orange-font {
+  color: var(--b-orange);
+}
+.card__button.white-bg.dcyan-font {
+  color: var(--d-cyan);
+}
+.card__button.white-bg.vdcyan-font {
+  color: var(--vd-cyan);
+}
+
+@media screen and (max-width: 480px) {
+  .attribution {
+    background-color: white;
+    text-align: center;
+    color: gray;
+    padding-top: 2rem;
+    font-size: 14px;
+  }
+
+  a {
+    color: var(--b-orange);
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card__car:nth-child(1) {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+
+  .card__car:nth-last-child(1) {
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
+}
+
+/*@media screen and (min-width: 768px) and (max-width: 1024px) {*/
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+  main {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    max-width: 480px;
+    height: auto;
+  }
+
+  .card__car:nth-child(1) {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+
+  .card__car:nth-last-child(1) {
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
+
+  .attribution {
+    background-color: white;
+    text-align: center;
+    color: gray;
+    padding-top: 2rem;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html,
+  body,
+  main {
+    width: 100%;
+    height: 100%;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    display: flex;
+    max-width: 1024px;
+    height: auto;
+  }
+
+  .card__car:nth-child(1) {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+  }
+
+  .card__car:nth-last-child(1) {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
+
+  .attribution {
+    background-color: white;
+    text-align: center;
+    color: gray;
+    padding-top: 0rem;
+    font-size: 14px;
+  }
+}
