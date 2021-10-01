@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/ichiklaus/fmentor-3-column)
-- Live Site URL: [Add live site URL here](https://ichiklaus.github.io/fmentor-3-column)
+- Live Site URL: [Add live site URL here](https://ichiklaus.github.io/fem-3-column/)
 
 
 ### Built with
